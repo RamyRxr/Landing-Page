@@ -6,12 +6,12 @@ import { ShieldHalf } from "lucide-react";
 import { PlugZap } from "lucide-react";
 import { GlobeLock } from "lucide-react";
 
-import user1 from "../assets/profile-pictures/user1.jpg";
-import user2 from "../assets/profile-pictures/user2.jpg";
-import user3 from "../assets/profile-pictures/user3.jpg";
-import user4 from "../assets/profile-pictures/user4.jpg";
-import user5 from "../assets/profile-pictures/user5.jpg";
-import user6 from "../assets/profile-pictures/user6.jpg";
+import user1 from "../assets/users/java.png";
+import user2 from "../assets/users/JavaScript.png";
+import user3 from "../assets/users/React.png";
+import user4 from "../assets/users/css-3.png";
+import user5 from "../assets/users/wind-3.png";
+import user6 from "../assets/users/icons8-blender-64.png";
 
 export const navItems = [
     { label: "Features", href: "#" },

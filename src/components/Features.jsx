@@ -10,7 +10,7 @@ const Features = () => {
 
                 <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide bg-gradient-to-r from-cyan-500 to-cyan-700 text-transparent bg-clip-text">
                     Easily build{" "}
-                    <span className="bg-gradient-to-r  from-purple-500 to-purple-800 text-transparent bg-clip-text"> your code </span>
+                    <span className="bg-gradient-to-r from-purple-500 to-purple-800 text-transparent bg-clip-text"> your code </span>
                 </h2>
 
             </div>
@@ -28,7 +28,7 @@ const Features = () => {
                             </div>
 
                             <div>
-                                <h5 className="mt-1 mb-6 text-xl font-bold bg-gradient-to-r  from-purple-300 to-purple-500 text-transparent bg-clip-text ">{feature.text}</h5>
+                                <h5 className="mt-1 mb-6 text-xl font-bold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text">{feature.text}</h5>
                                 <p className="text-md p-2 mb-20 text-neutral-500">
                                 {feature.description}
                                 </p>

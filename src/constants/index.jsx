@@ -14,50 +14,50 @@ import user5 from "../assets/users/wind-3.png";
 import user6 from "../assets/users/icons8-blender-64.png";
 
 export const navItems = [
-    { label: "Features", href: "#" },
-    { label: "Workflow", href: "#" },
-    { label: "Pricing", href: "#" },
-    { label: "Testimonials", href: "#" },
+    { label: "About Me", href: "#" },
+    { label: "Skills", href: "#" },
+    { label: "My Services", href: "#" },
+    { label: "Contact", href: "#" },
 ];
 
 export const testimonials = [
     {
-        user: "John Doe",
+        user: "UI/UX Designer",
         company: "Stellar Solutions",
         image: user1,
         text: "I am extremely satisfied with the services provided. The team was responsive, professional, and delivered results beyond my expectations.",
     },
 
     {
-        user: "Jane Smith",
+        user: "Frontend Developer",
         company: "Blue Horizon Technologies",
         image: user2,
         text: "I couldn't be happier with the outcome of our project. The team's creativity and problem-solving skills were instrumental in bringing our vision to life",
     },
 
     {
-        user: "David Johnson",
+        user: "graphic Designer",
         company: "Quantum Innovations",
         image: user3,
         text: "Working with this company was a pleasure. Their attention to detail and commitment to excellence are commendable. I would highly recommend them to anyone looking for top-notch service.",
     },
 
     {
-        user: "Ronee Brown",
+        user: "Posters Designer",
         company: "Fusion Dynamics",
         image: user4,
         text: "Working with the team at XYZ Company was a game-changer for our project. Their attention to detail and innovative solutions helped us achieve our goals faster than we thought possible. We are grateful for their expertise and professionalism!",
     },
 
     {
-        user: "Michael Wilson",
+        user: "logo Designer",
         company: "Visionary Creations",
         image: user5,
         text: "I am amazed by the level of professionalism and dedication shown by the team. They were able to exceed our expectations and deliver outstanding results.",
     },
 
     {
-        user: "Emily Davis",
+        user: "backend Developer",
         company: "Synergy Systems",
         image: user6,
         text: "The team went above and beyond to ensure our project was a success. Their expertise and dedication are unmatched. I look forward to working with them again in the future.",

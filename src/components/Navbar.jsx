@@ -35,13 +35,15 @@ const Navbar = () => {
             </nav>
 
             <div className="hidden lg:flex space-x-6">
+                
                 <a href="#" className="relative py-2 px-3 border rounded-md text-cyan-500 overflow-hidden group hover:text-white">
                     <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-700 transform -translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
-                    <span className="relative z-10 font-bold">Hire Me</span>
+                    <span className="relative z-10 font-bold">Log in</span>
                 </a>
+
                 <a href="#" className="relative py-2 px-3 rounded-md text-white bg-gradient-to-r from-purple-500 to-purple-800 overflow-hidden group">
                     <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-cyan-700 transform -translate-x-full transition-all duration-300 group-hover:translate-x-0"></span>
-                    <span className="relative z-10 font-bold">Downlaod CV</span>
+                    <span className="relative z-10 font-bold">Create Account</span>
                 </a>
             </div>
 

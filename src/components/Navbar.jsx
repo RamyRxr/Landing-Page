@@ -1,19 +1,35 @@
-/* eslint-disable no-unused-vars */
-
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "/src/assets/users/React.png";
 import { navItems } from "../constants";
 
 const Navbar = () => {
     const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(true);
+    let lastScrollY = window.scrollY;
 
     const toggleNavbar = () => {
         setMobileDrawerOpen(!mobileDrawerOpen);
     };
 
+    const handleScroll = () => {
+        if (window.scrollY < lastScrollY) {
+            setShowNavbar(true);
+        } else {
+            setShowNavbar(false);
+        }
+        lastScrollY = window.scrollY;
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <header className="relative lg:flex items-center top-2 left-0 w-full px-5 py-3 bg-transparent flex justify-between z-50">
+        <header className={`fixed top-0 left-0 w-full px-5 py-3 bg-[#1a1a1a] flex justify-between z-50 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
             <a href="#" className="relative lg:flex items-center text-2xl font-semibold text-cyan-500 no-underline px-5">
                 <img src={logo} alt="logo" className="w-10 h-10 mr-2" />
                 Ramy

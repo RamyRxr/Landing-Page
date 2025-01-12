@@ -14,12 +14,13 @@ import user5 from "../assets/users/logo-design.png";
 import user6 from "../assets/users/javascript.png";
 
 export const navItems = [
-    { label: "About Me", href: "#" },
-    { label: "Skills", href: "#" },
-    { label: "My Services", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Hero Section", href: "#hero-section" },
+    { label: "Features", href: "#features" },
+    { label: "Works", href: "#works" },
+    { label: "Prices", href: "#prices" },
+    { label: "Rating", href: "#rating" },
+    { label: "Footer", href: "#footer" },
 ];
-
 export const testimonials = [
     {
         user: "UI/UX Designer",

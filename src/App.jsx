@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import Works from "./components/works";
+import Prices from "./components/Prices";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <HeroSection  />
         <Features />
         <Works />
+        <Prices />
       </div>
     </>
   );

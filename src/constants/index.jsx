@@ -149,7 +149,7 @@ export const pricingOptions = [
 
     {
         title: "Enterprise",
-        price: "$200", 
+        price: "$50", 
         features: [ "Private board sharing", "Unlimited Storage", "High Performance Network", "Private Mode"]
     }
 ];

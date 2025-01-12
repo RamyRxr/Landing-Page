@@ -5,6 +5,8 @@ import HeroSection from "./components/HeroSection";
 import Features from "./components/Features";
 import Works from "./components/works";
 import Prices from "./components/Prices";
+import Rating from "./components/Rating";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Features />
         <Works />
         <Prices />
+        <Rating />
+        <Footer />
       </div>
     </>
   );

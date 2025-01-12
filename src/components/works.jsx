@@ -5,7 +5,7 @@ import { checklistItems } from "../constants";
 const Works = () => {
     return (
 
-        <div className="mt-20">
+        <div className="mt-20 border-t border-neutral-800 min-h-[800px] ">
 
             <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 mb-16  tracking-wide bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text">
                 Accelerate your{" "}

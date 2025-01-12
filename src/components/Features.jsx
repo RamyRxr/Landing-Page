@@ -2,9 +2,9 @@ import { features } from "../constants";
 
 const Features = () => {
     return (
-        <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
+        <div className="relative mt-20 border-t border-neutral-800 min-h-[800px]">
 
-            <div className="text-center">
+            <div className="text-center mt-10">
 
                 <span className="text-purple-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase"> Feature </span>
 
@@ -15,7 +15,7 @@ const Features = () => {
 
             </div>
 
-            <div className="flex flex-wrap mt-10 lg:mt-20">
+            <div className="flex flex-wrap lg:mt-20">
 
                 {features.map((feature, index) => (
 
@@ -28,7 +28,7 @@ const Features = () => {
                             </div>
 
                             <div>
-                                <h5 className="mt-1 mb-6 text-xl font-bold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text">{feature.text}</h5>
+                                <h5 className="mt-1 mb-4 text-xl font-bold bg-gradient-to-r from-purple-300 to-purple-500 text-transparent bg-clip-text">{feature.text}</h5>
                                 <p className="text-md p-2 mb-20 text-neutral-500">
                                 {feature.description}
                                 </p>

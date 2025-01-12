@@ -1,40 +1,61 @@
-import { testimonials } from "../constants";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import logo from "/src/assets/users/React.png";
+import { navItems } from "../constants";
 
+const Navbar = () => {
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
+  const toggleNavbar = () => setMobileDrawerOpen(!mobileDrawerOpen);
 
-const Rating = () => {
-    return (
-        <div className="mt-20 tracking-wide border-t border-neutral-800">
+  return (
+    <header className="relative flex items-center justify-between px-5 py-3 bg-transparent z-50">
+      <a href="#" className="flex items-center text-2xl font-semibold text-cyan-500 no-underline">
+        <img src={logo} alt="logo" className="w-10 h-10 mr-2" />
+        Ramy
+      </a>
 
-            <h2 className="text-3xl bg-gradient-to-r from-purple-300 to-purple-800 text-transparent bg-clip-text py-10 sm:text-5xl lg:text-6xl text-center my-5 lg:my-20 ">
-                What People are saying
-            </h2>
+      <nav className="hidden lg:flex space-x-4">
+        {navItems.map((item, index) => (
+          <a
+            key={index}
+            href={item.href}
+            className="relative text-xl font-bold text-[#175f8f] px-5 hover:text-cyan-500 transition duration-500"
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
 
-            <div className="flex flex-wrap justify-center">
+      <div className="hidden lg:flex space-x-6">
+        <a href="#" className="btn-outline">Log in</a>
+        <a href="#" className="btn-gradient">Create Account</a>
+      </div>
 
-                {testimonials.map((testimonial, index) => (
-                    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
+      <div className="lg:hidden">
+        <button onClick={toggleNavbar} className="text-cyan-500">
+          {mobileDrawerOpen ? <X /> : <Menu />}
+        </button>
+      </div>
 
-                        <div className="bg-gradient-to-r from-[#24012c] to-[#011a31] h-auto w-full rounded-md p-6 text-md border-4 border-purple-800 font-thin">
-                            
-                            <p className="text-neutral-500 font-bold">{testimonial.text}</p>
-                            <div className="flex space-x-3 mt-8 items-start ">
-                                <img  className="w-12 h-12 rounded-full border-2 border-neutral-300 object-cover" src={testimonial.image} alt="" />
-                                <div>
-                                    <h6 className="font-bold text-xl pb-2 bg-gradient-to-r from-cyan-500 to-cyan-700 text-transparent bg-clip-text">{testimonial.user}</h6>
-                                    <span className="text-sm font-normal italic text-neutral-500"> {testimonial.company} </span>
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                    </div>
-                ))}
-
-            </div>
-
+      {mobileDrawerOpen && (
+        <div className="fixed inset-0 bg-neutral-900 p-6 z-20 flex flex-col">
+          <button onClick={toggleNavbar} className="self-end text-cyan-500">
+            <X />
+          </button>
+          <ul className="mt-4 space-y-4 text-center">
+            {navItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.href} className="text-lg font-medium text-[#bef] hover:text-cyan-500">
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-    );
+      )}
+    </header>
+  );
 };
 
-export default Rating;
+export default Navbar;

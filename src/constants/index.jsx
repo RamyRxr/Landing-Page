@@ -11,7 +11,7 @@ import user2 from "../assets/users/React.png";
 import user3 from "../assets/users/icons8-blender-64.png";
 import user4 from "../assets/users/RamyRxr.png";
 import user5 from "../assets/users/logo-design.png";
-import user6 from "../assets/users/javascript.png";
+import user6 from '../assets/users/logo-design.png';
 
 export const navItems = [
     { label: "Hero Section", href: "#hero-section" },
